@@ -1,7 +1,7 @@
 # DeepLearingLab
 
 # Installing dependencies
-You can run 'pip install -r requirements.txt' in terminal to install the necessary dependencies. If you have python 3 you need to run 'pip3'
+You can run `pip install -r requirements.txt` in terminal to install the necessary dependencies. If you have python 3 you need to run `pip3`
 
 # Projects in this git:
 * Body weight predictor: Predicts body weight with linear regression from the brain weight
