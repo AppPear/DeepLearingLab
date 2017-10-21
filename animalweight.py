@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn import linear_model
 import warnings
-
+import matplotlib.pyplot as plt
 warnings.filterwarnings(action="ignore", module="scipy", message="^internal gelsd")
 
 # read data:
@@ -14,5 +14,8 @@ body_reg = linear_model.LinearRegression()
 body_reg.fit(x_values, y_values)
 
 # visualise result:
-brainWeight = 3.5
-print('For ', brainWeight, ' kg brain the body weight is: ', body_reg.predict(brainWeight)[0][0], ' kg')
+brainWeight = 0
+# print('For ', brainWeight, ' kg brain the body weight is: ', body_reg.predict(brainWeight)[0][0], ' kg')
+
+plt.scatter(x_values, y_values)
+plt.show()
