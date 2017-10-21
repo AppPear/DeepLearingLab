@@ -64,6 +64,6 @@ stream = pa.open(format=FORMAT,
 while True:
     try:
         block = stream.read(INPUT_FRAMES_PER_BLOCK)
-    except IOError, e:
+    except IOError as e:
         pass
     get_rms(block)
